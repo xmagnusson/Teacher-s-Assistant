@@ -1,0 +1,477 @@
+/***************************************************
+**************************************************
+* color pallete
+*
+*  forest green - #013A20
+*  emerald green - #478C5C
+*  lint - #BACC81
+*  lint - #CDD193
+*
+*  yellow - #ffeb5b
+**************************************************
+***************************************************/
+
+
+/***************************************************
+*   general
+***************************************************/
+.displayNone{
+  display: none;
+}
+
+body{
+  min-width: 370px;
+}
+
+ul{
+  margin-top: 1rem;
+}
+
+body footer em{
+  color: #013A20;
+}
+
+#heroIntroText span:not(:first-child)::after {
+  content: ":)";
+  letter-spacing: 0.2rem;
+}
+
+#hero p {
+  margin-bottom: 0!important;
+}
+
+#accordionScore{
+  min-height: 73vh;
+}
+
+#totalScore{
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+#accordionFooterSection {
+  overflow-y: auto;
+  max-height: calc(100vh - 102.72px);
+}
+
+footer {
+  box-shadow: 0 0 15px #013A20;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/***************************************************
+*   #topMenu related
+***************************************************/
+#topMenu button{
+  background-color: #013A20;
+  border-color: #CDD193;
+}
+
+#topMenu button:active, #topMenu button:hover{
+  background-color: #CDD193;
+  color: #000000;
+}
+
+#topMenu button:focus{
+  color: white;
+}
+
+#topMenu .changeModeIcon{
+  background-color: white;
+  border-color: white;
+}
+
+#topMenu button.changeModeIcon:hover, #topMenu button.changeModeIcon:active{
+  background-color: rgb(255, 235, 91);
+}
+
+#topMenu{
+  background-color: #013A20;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 15px #013A20;
+}
+
+#topMenu span.title{
+  background-color: #013A20;
+  color: white!important;
+  font-family: 'Handlee', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#topMenu #maxPoints{
+  color: #CDD193;
+  height: fit-content;
+}
+
+#topMenu div#maxPointsDiv{
+  align-items: center;
+}
+
+/***************************************************
+*   #hero related
+***************************************************/
+#hero h1 {
+  color: whitesmoke!important;
+  font-family: 'Handlee', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#hero {
+  background-color: #013A20;
+  color: #CDD193;
+  height: 100vh;
+  min-height: 650px;
+  padding: 0!important;
+}
+
+#hero button {
+  background-color: #013A20;
+  border-color: #CDD193;
+}
+
+#hero img {
+  object-fit: contain;
+  height: 200px;
+}
+
+#hero label{
+  position: relative;
+  top: 8px;
+  background-color: #CDD193;
+  padding: 0 10px;
+  border-radius: 0.2rem;
+  color: #013A20;
+}
+
+#hero button:active{
+  background-color: #CDD193;
+  color: #013A20;
+}
+
+#hero > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero > div > div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero #maxScoreInputDiv {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/***************************************************
+*   accordion styles
+***************************************************/
+.myAccordion {
+  background-color: white;
+  color: #013A20;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  outline: none;
+  font-size: 1.1rem;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+  
+.myAccordion:first-child{
+  cursor: default!important;
+  color: #757575;
+}
+
+.myAcc_active, .myAccordion:hover:not(:first-child), .myAccordion:focus:not(:first-child) {
+  background-color: #CDD193;
+  cursor: pointer;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: #478C5C;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.myAccordion:not(:first-child)::after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.8rem;
+  color: #CDD193;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  transition: transform 0.5s ease-out;
+}
+
+.myAcc_active:not(:first-child)::after {
+  transform: rotate(225deg);
+}
+
+.myAcc_points {
+  text-align: end;
+  width: 2.5rem;
+}
+
+.myAcc_text {
+  text-align: start;
+  width: 4.3rem;
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  font-family: 'Fragment Mono', monospace;
+  font-family: 'Handlee', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.myAcc_percentages {
+  text-align: end;
+  width: 5rem;
+}
+
+.myAcc_first {
+  border-top: 1px solid #eee;
+}
+
+#accordionScore{
+  margin-bottom: 6rem!important;
+}
+
+li > span.myAcc_points {
+  text-align: start;
+  width: 3rem;
+}
+
+li > span.myAcc_text {
+  width: 4.5rem;
+  margin-left: 0.5rem;
+}
+
+li > span.myAcc_percentages {
+  width: 4.5rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+
+/***************************************************
+*   darkMode styles
+***************************************************/
+body[data-bs-theme="dark"] div#accordionScore .myAccordion {
+  color: #CDD193;
+  background-color: #212529;
+  border-color: #3b4147;
+}
+
+body[data-bs-theme="dark"] div#accordionScore .panel {
+  color: #dee2e6;
+  background-color: #3b4147;
+}
+
+body[data-bs-theme="dark"] div#accordionScore .myAccordion:first-child {
+  color: #8c8e60;
+}
+
+body[data-bs-theme="dark"] .myAcc_active, body[data-bs-theme="dark"] .myAccordion:hover:not(:first-child), body[data-bs-theme="dark"] .myAccordion:focus:not(:first-child) {
+  background-color: #9b9b9b1a!important;
+  cursor: pointer;
+}
+
+body[data-bs-theme="dark"] #topMenu, body[data-bs-theme="dark"] footer {
+  box-shadow: 0 0 15px #8c8e60;
+}
+
+body[data-bs-theme="dark"] footer span {
+  color: #8c8e60!important;
+}
+
+body[data-bs-theme="dark"] footer em {
+  color: #dee2e6bf;
+}
+
+.panel {
+  background-color: #e6e6e642;
+}
+
+/***************************************************
+*   focus style on buttons and input field 
+***************************************************/
+.btn:focus {
+  box-shadow: 0px 0px 10px #ffeb5b !important;
+}   
+
+input:focus, .changeModeIcon:focus {
+  border: 1px solid black!important;
+  box-shadow: 0px 0px 20px #ffeb5b !important;
+}
+
+/***************************************************
+*   media query - styles for mobile screens and PC
+***************************************************/
+@media (max-width: 576px) {
+  #accordionScore{
+    margin-bottom: 2rem!important;
+    margin-top: 2rem!important;
+  }
+
+  #topMenu span.title{
+    display: none;
+  }
+
+  #maxPointsDiv {
+    flex-grow: 1;
+  }
+
+  #maxPoints::before {
+    content: "Max points: ";
+  }
+
+  #maxPoints {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #hero img {
+    width: 130px;
+    height: 25%;
+    flex: 10;
+  }
+
+  #heroIntroText span:first-child, #heroIntroText br {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #maxPoints::before {
+    content: "Maximum points: ";
+  }
+
+  #hero button {
+    padding: 1rem 5rem!important;
+  }
+
+  #hero img {
+    width: 100px;
+    height: 25%;
+    flex: 4;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #topMenu span.title{
+    display: none;
+  }
+
+  #maxPointsDiv {
+    flex-grow: 1;
+  }
+
+  #maxPoints {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  #maxPoints::before {
+    content: "Maximum points: ";
+  }
+
+  #accordionScore {
+    max-width: 540px;
+    margin: auto;
+  }
+
+  #hero img {
+    width: 130px;
+    height: 25%;
+    flex: 10;
+  }
+
+  #hero button {
+    width: 100%;
+  }
+
+  #heroIntroText span:first-child, #heroIntroText br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #accordionScore {
+    max-width: 720px;
+    margin: auto;
+  }
+
+  #hero > div > div {
+    width: 720px;
+  }
+
+  #heroIntroText span:not(:first-child) {
+    color: #ffffff;
+  }
+
+  #maxPoints{
+    margin-right: 1rem;
+  }
+
+  #hero #calculatePercentagesDiv {
+    padding-top: 2rem!important;
+  }
+/*
+  footer {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0px;
+    z-index: 10;
+  }
+*/
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #heroIntroText span:first-child {
+    display: none;
+  }
+  #hero > div > div {
+    width: 700px;
+  }
+
+  #hero img {
+    flex: 2;
+  }
+
+  #heroIntroText span:not(:first-child) {
+    color: #CDD193;
+  }
+
+  #heroIntroText br {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  #accordionScore {
+    max-width: 1000px;
+  }
+}

@@ -362,6 +362,11 @@ input:focus, .changeModeIcon:focus {
   #heroIntroText span:first-child, #heroIntroText br {
     display: none;
   }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+  
 }
 
 @media (min-width: 576px) {

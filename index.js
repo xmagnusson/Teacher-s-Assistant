@@ -119,9 +119,10 @@ document.querySelector(".changeModeIcon").addEventListener("click", changeColorM
 function changeColorMode(){
     if (document.body.getAttribute("data-bs-theme") === "dark"){
         document.body.setAttribute("data-bs-theme","light");
-        document.querySelector(".changeModeIcon").querySelector("img").setAttribute("src","./icons/sun-fill.svg");
+        document.querySelector(".changeModeIcon").querySelector("img").setAttribute("src","./icons/moon-stars-fill.svg");
     }else{
         document.body.setAttribute("data-bs-theme","dark");
-        document.querySelector(".changeModeIcon").querySelector("img").setAttribute("src","./icons/moon-stars-fill.svg");
+        document.querySelector(".changeModeIcon").querySelector("img").setAttribute("src","./icons/sun-fill.svg");
     }
 }
+
